@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('articles', [ArticlesController::class, 'index']);
+Route::get('/v1/articles', [ArticlesController::class, 'index']);
