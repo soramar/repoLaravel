@@ -7,7 +7,7 @@ use App\Models\Article;
 
 class ArticlesController extends Controller
 {
-    public function index()
+    public function index(): object
     {
         $articles = Article::all();
         return response()->json($articles);
