@@ -24,7 +24,6 @@ export const Articles = () => {
                     return <li key={article.id}>{article.title}</li>;
                 })}
             </h4>
-            <button>fetch</button>
         </div>
     );
 };
